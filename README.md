@@ -76,12 +76,68 @@ just a few words about our main guys here.
 
 ## How I start?
 
+If you don't know how to code and want to play with it, I recommend starting
+with some web-based tool like Bolt.new, Replit or Lovable.
 
+If you already know how to code, install Cursor, Windsurf
+
+If you already know how to code and is a terminal maniac like me, check aider.
+
+Install those tools, some are free to use, some will ask you for a $20-ish
+monthly plan (I pay for Cursor, for instance).
+
+## How I prompt for coding?
+
+After you installed, played with those tools a bit, you'll notice they will
+hallucinate, enter in endless cycles of trying to
+
+## How I avoid hallucinations?
+
+PRD. What?! They say that the best ways to solve a problem in engineering is to
+create a new achronym and here it's no exception :-) J/k... PRD is short for
+Project Requirements Document. Basically, it's just a bunch of docs (or only
+one doc) describing the requirements and other details about your software
+project.
+
+Turns out, if you leave your loved LLM free, with not much context of what to
+do, it will hallucinate pretty wild and quick. You need to tame the beast and
+PRDs are a great way to do it.
+
+What I most like about PRDs is how they are super helpful to anyone, from
+people who never coded before to senior SWE.
+
+You don't need any background to start a PRD, you just need your idea for an
+app and that's it.
+
+To write a PRD, you can follow some strategies:
+
+Strategy 1:
+
+Open ChatGPT and copy-and-paste the following prompt:
+
+...
+
+Strategy 2:
+
+In Cursor, ...
+
+## How I deal with errors?
+
+One thing you must know about coding and softwares in general: they will fail.
+No matter what you try to prevent that, it will happen. So let's first embrace
+that and be friends with errors and bugs.
+
+The first strategy here is to mimic what SWE do: see what the
+interpreter/compiler gave to you as an error message and try to understand it. 
+
+## I want to learn more about all this code the AI is generating
+
+That's great! I prepared some down the rabbit hole sessions here.
 
 # Common Questions
 
 - How to deal with hallucinations?
-- What's a PRD?
+    - What's a PRD?
 - Start from scratch or with a boilerplate?
 - Greenfield/clean state/fresh project vs existing codebase
 - What's the best tool?
@@ -93,6 +149,29 @@ just a few words about our main guys here.
 - Should I use TDD or any other type of tests?
 - How to get structured data?
 
+# Tools
+
+Here I keep an updated list of main tools around using AI for coding. I tested
+most of them and you'll find my honest opinion during the time I tested.
+
+## Editors / IDE
+
+- Cursor
+- Cline
+- Windsurf
+
+## Webapps
+ 
+- Bolt
+- Replt
+- Lovable
+
+## Misc
+
+- Task master
+- CodeGuide
+- repomix
+-
 # Roadmap
 
 - Intro
