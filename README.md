@@ -8,7 +8,8 @@
 </div>
 <br/>
 
-> Everything you wanted to know about using AI to help on coding.
+> Everything you wanted to know about using AI to help you code and/or to code
+> for you.
 
 ## Introduction
 
