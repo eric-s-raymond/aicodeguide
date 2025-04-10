@@ -344,7 +344,8 @@ focus on LLM-tools communications.
 them. For now, only Anthropic Claude LLM supports them, so make sure to use it
 Claude when you want to work with MCP tools.
 
-I listed some interesting MCP servers above.
+Anthropic keeps an updated list of MCP servers here:
+https://github.com/modelcontextprotocol/servers 
 
 📚 Resources:
 
@@ -352,6 +353,7 @@ I listed some interesting MCP servers above.
 - [SLOP](https://github.com/agnt-gg/slop)
 - [MCP vs SLOP](https://mcpslop.com/)
 - [A2A](https://google.github.io/A2A/)
+
 
 ## Creating my own MCP server
 
