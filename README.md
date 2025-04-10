@@ -8,7 +8,7 @@
 </div>
 <br/>
 
-Everything you wanted to know about using AI to code.
+> Everything you wanted to know about using AI to help on coding.
 
 ## Introduction
 
@@ -52,7 +52,7 @@ But wait, is this guide for me? Let's see:
 
 Let's start!
 
-# AI coding? Vibe coding?
+## AI coding? Vibe coding?
 
 All those terms are pretty similar. But basically AI coding is about using AI
 models (specially LLMs these days) and all the tooling around it to help you
@@ -82,26 +82,45 @@ AI coding and move on.
 If you know what's all about, please move on for the next section. Otherwise,
 just a few words about our main guys here.
 
-# The Roadmap
+# 🗺️ The Roadmap
 
-## How I start?
+## 1. How I start?
 
-If you don't know how to code and want to play with it, I recommend starting
-with some web-based tool like Bolt.new, Replit or Lovable.
+- If you don't know how to code and want to play with it, I recommend starting
+with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.com)
+or [Lovable](https://lovable.dev).
 
-If you already know how to code, install Cursor, Windsurf
+- If you already know how to code, install Cursor or Windsurf. You can start with the
+free plan and then upgrade to $20 monthly plan. I pay for Cursor, it's pretty good and cheap,
+given you'll have tons of tokens to use on most recent LLM models out there.
 
-If you already know how to code and is a terminal maniac like me, check aider.
+- If you want a more open source alternative, try OpenHands. You run it as a Docker container
+that exposes a webapp. You'll have to create an Anthropic account to get access to an API key,
+or use some LLM available in OpenRouter.
 
-Install those tools, some are free to use, some will ask you for a $20-ish
-monthly plan (I pay for Cursor, for instance).
+- If you already know how to code and is a terminal maniac like me, check aider and Claude Code.
+For those you'll need to setup API keys for Anthropic Claude or for OpenRouter.
+
+> Suggestion: I really recommend creating an account in OpenRouter. It's really easy and you'll
+get access to the most updated LLM models and even free versions of it. For instance,
+my go-to LLM model these days is Gemini 2.5 Pro and I run it through OpenRouter for free
+(there are daily quotas of credits, but it's still an interesting option for experiments
+with aider and OpenHands, for instance).
+
+> Important note: Claude Code is super expensive these days! You can easily spend $50/day.
+So be careful, monitor your usage. That's why I recommend starting with Cursor so you don't
+have to worry about it.
 
 📚 Resources:
+
+- [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
+- [OpenRouter]()
 
 ## How I prompt for coding?
 
 After you installed, played with those tools a bit, you'll notice they will
-hallucinate, enter in endless cycles of trying to
+hallucinate, enter in endless cycles of trying to fix a possible error, etc.
+
 
 📚 Resources:
 
@@ -143,6 +162,10 @@ that and be friends with errors and bugs.
 
 The first strategy here is to mimic what SWE do: see what the
 interpreter/compiler gave to you as an error message and try to understand it. 
+
+Another great idea is to add MCP tools great for debugging like browser one 
+
+## What's MCP and how can I benefit from it?
 
 ## I want to learn more about all this code the AI is generating
 
@@ -193,24 +216,9 @@ most of them and you'll find my honest opinion during the time I tested.
 - Task master
 - CodeGuide
 - repomix
--
+
 # Roadmap
 
-- Intro
-    - [x] What's this guide about?
-    - [x] AI coding? Vibe coding?
-    - [] What's a LLM?
-- Tools
-    - Cursor
-    - Cline
-    - Windsurf
-    - Bolt
-    - Lovable
-    - Repl
-    - Sweep
-    - Task master
-    - CodeGuide
-    - repomix
 - Cursor rules
 - PRD and specs/stdlib
     - Break into tasks
@@ -255,3 +263,4 @@ This guide was inspired by the great [llm-course](https://github.com/milanm/DevO
 Special thanks to:
 
 * Gabriela Thumé for everything <3
+* ChatGPT 4o for generating all the images you see here :-)
