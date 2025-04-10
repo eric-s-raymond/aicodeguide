@@ -233,7 +233,7 @@ idea of using a stdlib of Cursor rules
 - [From Design doc to code: the Groundhog AI coding assistant (and new Cursor vibecoding meta)](https://ghuntley.com/specs/) by Geoffrey Huntley:
 part 2 of the previous post, where Geoff suggests to use LLMs to build specs
 (PRD) and Cursor rules automatically
-- [My LLM codegen workflow atm](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/)
+- [My LLM codegen workflow atm](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/) by Harper Reed
 
 ## Which LLM model I should use?
 
@@ -385,7 +385,8 @@ you're guiding a junior developer to work in a specific GH ticket :-)
 *TODO*
 ## How to get structured data? How to validate the LLM output?
 *TODO*
-# Tools
+
+#🛠️  Tools
 
 Here I keep an updated list of main tools around using AI for coding. I tested
 most of them and you'll find my honest opinion during the time I tested.
@@ -420,9 +421,7 @@ most of them and you'll find my honest opinion during the time I tested.
 - [CodeGuide](https://www.codeguide.dev/)
 - [repomix](https://repomix.com/)
 
-## MCP Servers
-
-# Who to follow
+# 🤗 Who to follow
 
 Some super interesting people implementing AI coding models/tools or using it
 on their own projects.
@@ -437,7 +436,7 @@ on their own projects.
 - [@skirano](https://x.com/skirano)
 - [@beyang](https://x.com/beyang)
 
-# Acknowledgements
+# 💖 Acknowledgements
 
 This guide was inspired by the great [llm-course](https://github.com/milanm/DevOps-Roadmap) from Maxime Labonne.
 
@@ -447,12 +446,12 @@ Special thanks to:
 * ChatGPT 4o for generating the banner you see on the top, inspired by the
   incredible artist [Deathburger](https://citadel9.com/)
 
-# Contributing
+# ⭐ Contributing
 
 If you want to contribute with corrections, feedbacks or some missing tool or
 reference, please feel free to open a new PR, a new issue or get in touch with
 me: [@aut0mata](https://x.com/aut0mata).
 
-# License
+# ⚖️ License
 
 MIT
