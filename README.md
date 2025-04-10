@@ -235,9 +235,9 @@ part 2 of the previous post, where Geoff suggests to use LLMs to build specs
 
 ## Which LLM model I should use?
 
-    | Goal | Models |
-    |----|----|
-    | Brainstorming | ChatGPT 4.5, 4o,  |
+| Goal | Models |
+|----|----|
+| Brainstorming | ChatGPT 4.5, 4o,  |
 | PRD creation | |
 | Task split | |
 | Coding | |
