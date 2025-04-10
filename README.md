@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.imgur.com/ufmNDoc.png" alt="AI Code Guide">
+<img src="https://i.imgur.com/hpgnZsf.png" alt="AI Code Guide">
   <p align="center">
     𝕏 <a href="https://x.com/aut0mata">Follow me on X</a> • 
     🤗 <a href="https://void.cc">My personal website</a> • 
@@ -12,7 +12,7 @@
 
 ## Introduction
 
-It's April, I just arrived in Munich -- I live in London but I'm here for a
+It's April of 2025, I just arrived in Munich -- I live in London but I'm here for a
 work trip -- and I decided to open my laptop, pop a Club Mate and dump
 everything I have been researching and implementing around AI to help on
 code generation..
@@ -52,6 +52,11 @@ But wait, is this guide for me? Let's see:
 
 Let's start!
 
+📚 Resources:
+
+- [The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it) by Tim O'Reilly
+- [How to prepare for the future of development and AI](https://www.youtube.com/watch?v=BP54GqVK3JA) by Santiago
+
 ## AI coding? Vibe coding?
 
 All those terms are pretty similar. But basically AI coding is about using AI
@@ -76,10 +81,6 @@ So, in summary, no matter if you're using AI to discuss your software ideas or
 to help on coding only parts of your already existing code base, or if you're
 full on vibe coding, you're using AI to help you generate code. Let's call it
 AI coding and move on.
-
-📚 Resources:
-
-- [The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it) by Tim O'Reilly
 
 ## What's AI and LLM?
 
