@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.imgur.com/hpgnZsf.png" alt="AI Code Guide">
+<img src="https://i.imgur.com/v0Tx6am.png" alt="AI Code Guide">
   <p align="center">
     𝕏 <a href="https://x.com/aut0mata">Follow me on X</a> • 
     🤗 <a href="https://void.cc">My personal website</a> • 
