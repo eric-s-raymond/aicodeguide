@@ -11,7 +11,9 @@
 > Everything you wanted to know about using AI to help you code and/or to code
 > for you.
 
-** [TL;DR Just show me how to vibe code!](#vibe) **
+<div align="center">
+  <h3><a href="#vibe">TL;DR Just show me how to vibe code 😎!</a></h3>
+</div>
 
 ## Introduction
 
