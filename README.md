@@ -441,8 +441,9 @@ This guide was inspired by the great [llm-course](https://github.com/milanm/DevO
 
 Special thanks to:
 
-* Gabriela Thumé for everything <3
-* ChatGPT 4o for generating all the images you see here :-)
+* Gabriela Thumé for everything ❤️
+* ChatGPT 4o for generating the banner you see on the top, inspired by the
+  incredible artist [Deathburger](https://citadel9.com/)
 
 # Contributing
 
