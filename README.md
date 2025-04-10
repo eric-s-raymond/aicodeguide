@@ -386,7 +386,7 @@ you're guiding a junior developer to work in a specific GH ticket :-)
 ## How to get structured data? How to validate the LLM output?
 *TODO*
 
-#🛠️  Tools
+# 🛠️  Tools
 
 Here I keep an updated list of main tools around using AI for coding. I tested
 most of them and you'll find my honest opinion during the time I tested.
