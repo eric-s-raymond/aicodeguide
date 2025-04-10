@@ -77,6 +77,10 @@ to help on coding only parts of your already existing code base, or if you're
 full on vibe coding, you're using AI to help you generate code. Let's call it
 AI coding and move on.
 
+📚 Resources:
+
+- [The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it) by Tim O'Reilly
+
 ## What's AI and LLM?
 
 If you know what's all about, please move on for the next section. Otherwise,
@@ -116,15 +120,30 @@ have to worry about it.
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
 - [OpenRouter]()
 
-## How I prompt for coding?
+## 2. How I prompt for coding?
 
 After you installed, played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to fix a possible error, etc.
+It's important to know how to prompt well. Some tips:
 
+- Do not ask everything in one prompt. Only
+- Give it details
+- Break you project into tasks and subtasks
+- Create a PRD first
+- Try different models for different goals
+- Try different models to confirm
+- LLMs are "yes machines", so be critic
 
 📚 Resources:
 
-## How I avoid hallucinations?
+- [You are using Cursor AI incorrectly...](https://ghuntley.com/stdlib/) by Geoffrey Huntley:
+here Geoff introduces his
+idea of using a stdlib of Cursor rules and keep growing it automatically
+- [From Design doc to code: the Groundhog AI coding assistant (and new Cursor vibecoding meta)](https://ghuntley.com/specs/) by Geoffrey Huntley:
+after 
+
+## What are Cursor rules?
+## 3. How I avoid hallucinations? What is a PRD?
 
 PRD. What?! They say that the best ways to solve a problem in engineering is to
 create a new achronym and here it's no exception :-) J/k... PRD is short for
@@ -154,7 +173,15 @@ Strategy 2:
 
 In Cursor, ...
 
-## How I deal with errors?
+## How I start my project?
+
+### Webapp
+
+### Backend
+
+### Python Project
+
+## 4. How I deal with errors and bugs?
 
 One thing you must know about coding and softwares in general: they will fail.
 No matter what you try to prevent that, it will happen. So let's first embrace
@@ -165,26 +192,39 @@ interpreter/compiler gave to you as an error message and try to understand it.
 
 Another great idea is to add MCP tools great for debugging like browser one 
 
-## What's MCP and how can I benefit from it?
-
+## 5. What's MCP (and SLOP) and how can I benefit from it?
+- https://mcpslop.com/
+## Creating my own MCP server
+## Start from scratch or with a boilerplate?
+## Greenfield/clean state/fresh project vs existing codebase
+- And if my code already exists?
+    - repomix, llmtxt and other ways to fit your code base into LLMs
+    - go per task instead of per project!
+## Should I use TDD or any other type of tests?
+## How to make it safe?
+## How to get structured data? How to validate the LLM output?
 ## I want to learn more about all this code the AI is generating
 
-That's great! I prepared some down the rabbit hole sessions here.
+Do you need to understand programming? Computer and systems fundamentals? Not entirely,
+but I truly believe in computer literacy: everybody should learn how to code and to understand
+how systems work, and it's never been more true than now.
 
-# Common Questions
+I prepared some  "down the rabbit hole" sessions here. They are not finite on themselves but
+they provide pointers to were to know more about fundamentals concepts that would ground
+your AI coding skills.
 
-- How to deal with hallucinations?
-    - What's a PRD?
-- Start from scratch or with a boilerplate?
-- Greenfield/clean state/fresh project vs existing codebase
-- What's the best tool?
-- What I do with bugs? Debugging?
-- How to deal with the fact that LLMs are "yes machines"?
-  - More specific details, use different LLMs to confirm, be critic
-- Do I need to understand programming? Computer and systems fundamentals?
-- Specs/stdlib?
-- Should I use TDD or any other type of tests?
-- How to get structured data?
+- Going deeper the code gen rabbit hole... Let's build a code assistant ourselves!
+    - Show lilcoder, different versions
+- Going deeper the web dev rabbit hole
+    - Explain how web works, webapps, etc
+- Going deeper the LLM rabbit hole
+    - CoT
+    - RAG and CAG
+    - LangChain and LangGraph, Autogen
+    - Embeddings and vector databases: LlamaIndex, MongoDB Vector DB, Pinecone, ...
+    - Validating outputs of LLMs: https://github.com/confident-ai/deepeval
+	- https://github.com/mongodb-developer/GenAI-Showcase
+
 
 # Tools
 
@@ -217,44 +257,12 @@ most of them and you'll find my honest opinion during the time I tested.
 - CodeGuide
 - repomix
 
-# Roadmap
-
-- Cursor rules
-- PRD and specs/stdlib
-    - Break into tasks
-- Star your project
-    - Web?
-- MCP and SLOP
-    - Best servers
-    - Creating your own
-- Debugging
-- Make it safe
-- And if my code already exists?
-    - repomix, llmtxt and other ways to fit your code base into LLMs
-    - go per task instead of per project!
-- Going deeper the code gen rabbit hole... Let's build a code assistant ourselves!
-    - Show lilcoder, different versions
-- Going deeper the web dev rabbit hole
-    - Explain how web works, webapps, etc
-- Going deeper the LLM rabbit hole
-    - CoT
-    - RAG and CAG
-    - LangChain and LangGraph, Autogen
-    - Embeddings and vector databases: LlamaIndex, MongoDB Vector DB, Pinecone, ...
-    - Validating outputs of LLMs: https://github.com/confident-ai/deepeval
+## MCP Servers
 
 # Who to follow
 
-- geoff
-
-# Refs
-
-- llm-course
-- https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/
-- awesome lists
-- https://mcpslop.com/
-- https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it
-- https://github.com/mongodb-developer/GenAI-Showcase
+- [@GeoffreyHuntley](https://x.com/GeoffreyHuntley)
+- []()
 
 # Acknowledgements
 
