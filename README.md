@@ -12,45 +12,37 @@
 
 ## Introduction
 
-It's April of 2025, I just arrived in Munich -- I live in London but I'm here for a
-work trip -- and I decided to open my laptop, pop a Club Mate and dump
-everything I have been researching and implementing around AI to help on
-code generation..
+It's April of 2025, I just arrived in the sunny Munich -- I live in London but I'm here for a
+work trip -- and I decided to open my laptop, pop a *Club Mate* and dump
+everything I have been researching around **AI to help on code generation**.
 
-I really love coding, I do. I'm doing that for a living during the past 15
-years as both a SWE and AI/ML Engineer. I love computers, to build them, break
-them in parts, understand their fundamentals and everything around it. And
-because of that I love to spend time reading about it, studying it, hacking
-it...
-
-All that is to say that I've been following hypes and trends for a long time
+I've been following hypes and trends for a long time
 and the way we interact with computers and code them is
-changing. And it's a profound change. It's a change on the tools we use, the
+changing. And it's a profound change, on the tools we use, the
 way we code and think about software products and systems.
 
 And it's changing super fast! New LLM models are being released every week. New
-tools, new editors, new "vibe coding" practices, new protocols (MCP, A2A, SLOP,
-...)... and it's really hard to keep track of all that. Everything is
-scattered in different places, websites, repos, etc.
+tools, new editors, new "vibe coding" practices, new protocols, MCP, A2A, SLOP,
+... And it's really hard to keep track of all that. Everything is
+scattered in different places, websites, repos, YouTube videos, etc.
 
 That's why I decided to
 write this guide. It's my humble attempt to put everything together and present
-you the practices and tools around AI coding or AI code generation, all in one
-place, with no fluf, in an accessible way.
+you the practices and tools around **AI coding** or **AI assisted code generation**, all in one
+place, with no fluf, in an accessible form.
 
-But wait, is this guide for me? Let's see:
+- **If you're a coder/dev/SWE/MLE who already know how to code but is not using
+  AI code assistants yet**, this guide is for you: it presents the most
+  recent tools and good practices to make the most of them to help on your daily
+  jobs. Either having AI as your copilot or being the copilot for a AI agent.
 
-- If you're a coder/dev/SWE/MLE who already know how to code but is not using
-  AI code assistants yet. Yep, this guide is for you: it introduces all most
-  recent tools and practices to make the most of them to help on your daily
-  jobs
-- If you never coded before but you're interested in this new "vibe coding"
-  thing to build your own SaaS and other software products. This guide is
+- **If you never coded before but you're interested in this new "vibe coding"
+  thing to build your own SaaS and other software products**, this guide is
   definetely for you: I'll try to do my best to remove obscurity and leave you
-  only what's required to start your journey, but being super critic about what
-  is really important and what's "just hype" (tm)
+  with what's required to start your journey, but being super critic about what
+  is really important and what's "just hype".
 
-Let's start!
+Cool, let's start!
 
 📚 Resources:
 
@@ -65,15 +57,15 @@ write software. It's also called "AI for code generation" or "code gen" for
 short, and there's an entire fascinating field of research and engineering,
 that dates back to 1950's when we used Lisp to generate code. Now we have LLMs
 as main engines to power code generation, and there's also some threads on
-neurosymbolic hybrid approaches starting to show up. And AI coding is also a
+neurosymbolic hybrid approaches starting to show up. AI coding is also a
 practice: if you're using Cursor and tab-tab-tab your way to get completions,
-you're "AI coding"; if you're full on using Cursor agent mode, you're also "AI
+you're "AI coding"; if you're full on using Cursor's agent mode, you're also "AI
 coding". In summary: it's any way to use an AI models to help you to generate
-code. Generally you have coders in this group.
+code. Generally you have people who already know how to code in this group.
 
 Vibe coding is AI coding cranked up :-) Here you don't care much about the code
 being generated, you just give a prompt and expect the AI to code everything
-for you. The term was creaetd by Karpathy in 2024 and it's getting pretty
+for you. The term was created by Karpathy in 2024 and it's getting pretty
 popular. IMHO it's helping to democratize coding for everyone that never
 thought about coding before!
 
@@ -82,10 +74,24 @@ to help on coding only parts of your already existing code base, or if you're
 full on vibe coding, you're using AI to help you generate code. Let's call it
 AI coding and move on.
 
-## What's AI and LLM?
+## How can I use it?
 
-If you know what's all about, please move on for the next section. Otherwise,
-just a few words about our main guys here.
+You can use AI coding in many different ways, but in summary:
+
+- AI is your copilot: you use AI models to augment yourself, to boost your
+  productivity. Either by firing up ChatGPT to help you on brainstroming ideas
+  for your SaaS; or using Cursor to autocomplete your docstrings. There are
+  many gains here, specially for creative exploration and to automate boring
+  parts of your work.
+
+- AI is the pilot: here you are the copilot. This is where the "vibe coding"
+  happens. You turn on the Cursor Agent YOLO mode and trust everything the
+  agents do to generate your code. Really powerful way to automate yourself,
+  but demands some good practices on how to design systems, tame the agents and
+  jumping in on a spaghetti of code you actually don't know about, specially to
+  solve errors.
+
+IMHO you should learn and practice both!
 
 # 🗺️ The Roadmap
 
@@ -95,15 +101,17 @@ just a few words about our main guys here.
 with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.com)
 or [Lovable](https://lovable.dev).
 
-- If you already know how to code, install Cursor or Windsurf. You can start with the
+- If you already know how to code, install [Cursor](https://cursor.com/) or [Windsurf](https://windsurf.com/).
+You can start with the
 free plan and then upgrade to $20 monthly plan. I pay for Cursor, it's pretty good and cheap,
 given you'll have tons of tokens to use on most recent LLM models out there.
 
-- If you want a more open source alternative, try OpenHands. You run it as a Docker container
-that exposes a webapp. You'll have to create an Anthropic account to get access to an API key,
-or use some LLM available in OpenRouter.
+- If you want a more open source alternative, try [OpenHands](https://github.com/All-Hands-AI/OpenHands).
+You run it as a Docker container
+that exposes a webapp. You'll have to create an [Anthropic API account](https://console.anthropic.com/) to get access to an API key,
+or use some LLM available in [OpenRouter](https://openrouter.ai/).
 
-- If you already know how to code and is a terminal maniac like me, check aider and Claude Code.
+- If you already know how to code and is a terminal maniac like me, check [aider](https://aider.chat/) and [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview).
 For those you'll need to setup API keys for Anthropic Claude or for OpenRouter.
 
 > Suggestion: I really recommend creating an account in OpenRouter. It's really easy and you'll
@@ -119,21 +127,78 @@ have to worry about it.
 📚 Resources:
 
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
-- [OpenRouter]()
 
-## 2. How I prompt for coding?
+## 2. How I prompt for coding? a.k.a how to vibe code well?
 
-After you installed, played with those tools a bit, you'll notice they will
+After you installed and played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to fix a possible error, etc.
 It's important to know how to prompt well. Some tips:
 
-- Do not ask everything in one prompt. Only
-- Give it details
-- Break you project into tasks and subtasks
-- Create a PRD first
+- Do not ask everything in one prompt. Only prompting "hey, building me an app
+  to for my pet store" doesn't help a software engineer and much less an AI :-)
+  Understand your project, brainstorm first with an LLM, create a PRD
+  (requirements), make a plan and split them in tasks.
+- Give it details. If you know what you want, say it. If you know which
+  programming language you want, which tech stack, what type of audience, add
+  it to your prompt.
+- Create a PRD first. Check the session above about it, it makes a world of
+  difference.
+- Break you project into tasks and subtasks.
 - Try different models for different goals
 - Try different models to confirm
 - LLMs are "yes machines", so be critic
+
+Here is a method/procedure/strategy/workflow that generally works well:
+
+1. Use ChatGPT o3 or 4o with the following prompt:
+```
+You're a senior software engineer. We're going to build the PRD of a project
+together.
+
+VERY IMPORTANT:
+- Ask one question at a time
+- Each question should be based on previous answers
+- Go deeper on every important detail required
+
+IDEA:
+<paste here your idea>
+```
+2. You're going to enter in a loop of questions/answers for a few minutes. Try
+   to answer as much as you can with as much details as possible. When finished
+   (or when you decide it's enough), send this prompt to guide the model to
+   compile it as a PRD:
+```
+Compile those findings into a PRD. Use markdown format. It should contain the
+following sections:
+
+- Project overview
+- Core requirements
+- Core features
+- Core components
+- App/user flow
+- Techstack
+- Implementation plan
+```
+3. Copy and save this file into a `docs/specs.md` inside your project folder
+4. Now let's create the task list for your project. Ask the following:
+```
+Based on the generated PRD, create a detailed step-by-step plan to build this project.
+Then break it down into small tasks that build on each other.
+Based on those tasks, break them into smaller subtasks.
+Make sure the steps are small enough to be implemented in a step but big enough
+to finish the project with success.
+Use best practices of software development and project management, no big
+complexity jumps. Wire tasks into others, creating a dependency list. There
+should be no orphan tasks.
+
+VERY IMPORTANT:
+- Use markdown
+- Each task and subtask should be a checklist item
+- Provide context enough per task so a developer should be able to implement it
+- Each task should have a number id
+- Each task should list dependendent task ids
+```
+5. Save this as `docs/todo.md` inside your project folder
 
 📚 Resources:
 
@@ -142,6 +207,16 @@ here Geoff introduces his
 idea of using a stdlib of Cursor rules and keep growing it automatically
 - [From Design doc to code: the Groundhog AI coding assistant (and new Cursor vibecoding meta)](https://ghuntley.com/specs/) by Geoffrey Huntley:
 after 
+- [My LLM codegen workflow atm](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/)
+
+## Which LLM model I should use?
+
+| Goal | Models |
+|======|=======|
+| Brainstorming | ChatGPT |
+| PRD creation | |
+| Task split | |
+| Coding | |
 
 ## What are Cursor rules?
 ## 3. How I avoid hallucinations? What is a PRD?
