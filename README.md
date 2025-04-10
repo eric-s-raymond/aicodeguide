@@ -11,6 +11,8 @@
 > Everything you wanted to know about using AI to help you code and/or to code
 > for you.
 
+** [TL;DR Just show me how to vibe code!](#vibe) **
+
 ## Introduction
 
 It's April of 2025, I just arrived in the sunny Munich -- I live in London but I'm here for a
@@ -128,7 +130,7 @@ have to worry about it.
 
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
 
-## How I prompt for coding? AKA How I vibe code?
+## How I prompt for coding? AKA How I vibe code?<a id='vibe'></a>
 
 After you installed and played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to fix a possible error, etc.
@@ -367,7 +369,11 @@ most of them and you'll find my honest opinion during the time I tested.
 
 # Who to follow
 
+Some super interesting people implementing AI coding models/tools or using it
+on their own projects.
+
 - [@GeoffreyHuntley](https://x.com/GeoffreyHuntley)
+- [@aut0mata](https://x.com/aut0mata)
 - [@NathanWilbanks_](https://x.com/NathanWilbanks_)
 - [@skcd42](https://x.com/skcd42)
 - [@xingyaow_](https://x.com/xingyaow_)
