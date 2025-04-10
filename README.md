@@ -250,13 +250,28 @@ list of goals/use you might have and which model to use it for:
 
 ## What are Cursor rules?
 
-*TODO*
+It's rules that will be applied to your project by "injecting" them in the
+context of the LLM. Each editor have some ways to do it. In Cursor, just create
+markdown files inside a `.cursor/rules/` folder. Cursor will make it sure to
+apply those on all communication with the LLM.
+
+You can add part of your PRD as rules, for instance, like the tech stack or
+some guidelines on code formating and style.
+
+Rules are super powerful and you can even use the AI itself to create the rules
+for you! [Check Geoff's method on that](https://ghuntley.com/specs/).
+
+📚 Resources:
+
+- [Cursor Rules Docs](https://docs.cursor.com/context/rules-for-ai)
+- [Windsurf Rules Docs](https://windsurf.com/editor/directory)
+- [Aider Conventions](https://aider.chat/docs/usage/conventions.html)
 
 ## How I avoid hallucinations? What is a PRD?
 
 PRD. What?! They say that the best ways to solve a problem in engineering is to
-create a new achronym and here it's no exception :-) J/k... PRD is short for
-Project Requirements Document. Basically, it's just a bunch of docs (or only
+create a new acronym and here it's no exception :-) J/k... PRD is short for
+Product Requirements Document. Basically, it's just a bunch of docs (or only
 one doc) describing the requirements and other details about your software
 project.
 
@@ -265,7 +280,7 @@ do, it will hallucinate pretty wild and quick. You need to tame the beast and
 PRDs are a great way to do it.
 
 What I most like about PRDs is how they are super helpful to anyone, from
-people who never coded before to senior SWE.
+people who never coded before to senior SWE or product managers.
 
 You don't need any background to start a PRD, you just need your idea for an
 app and that's it.
@@ -284,22 +299,59 @@ Check <a href="#vibe">here</a> how to use a LLM to create one for you.
 
 ## How I deal with errors and bugs?
 
-One thing you must know about coding and softwares in general: they will fail.
+One thing you must know about coding and software in general: they will fail.
 No matter what you try to prevent that, it will happen. So let's first embrace
 that and be friends with errors and bugs.
 
 The first strategy here is to mimic what SWE do: see what the
-interpreter/compiler gave to you as an error message and try to understand it. 
-
+interpreter/compiler gave to you as an error message and try to understand it.
+Copy and paste the error back to the LLM and ask it to fix it.
 Another great idea is to add MCP tools great for debugging like
 [BrowserTools](https://browsertools.agentdesk.ai/).
 
 ## What's MCP, SLOP and A2A and how can I benefit from it?
 
+MCP is short for Model Context Protocol. It was developed by Anthropic but it's
+starting to be considered by other LLMs like OpenAI's GPT and Google's Gemini.
+It's a powerful concept and it's pretty linked to another one: function/tool
+calling.
+
+Tool calling is a way for LLMs to call tools or functions to execute some
+operation. It's a way to update the knowledge window of a LLM (trained on data from the past)
+with new information and at same time to integrate it with external tools and
+endpoints. For instance, if you want to search the web for some information, you can instruct the LLM
+to use a tool that does that (eg `Hey, if you need to search for something on
+web, use this tool: search(term)`). Then, instead of spending many tokens, iteration steps and
+parsing workloads, the LLM will call the tool, get the output and use it when
+generating new predictions for you.
+
+MCP extends this idea by creating a standard for it. This way we can create a
+MCP server that will expose some resource (a database, for instance) or tool (a
+specific piece of software that will compute something and return the results,
+for instance) to the LLM.
+
+Wait, but it's not just an API? Couldn't I just mimic the same with an HTTP API
+server/client and some parsing in the LLM prompts? Kinda, and that's what SLOP
+proposes. However, having a standard like MCP makes it easier to make sure the
+LLM will support it natively without extra parsing and tricks on the client
+side.
+
+A2A (Agent to Agent Protocol) is pretty recent in the game. It was created by
+Google to "complement" MCP, focusing on multiagent communication while MCP
+focus on LLM-tools communications.
+
+> Important: There are lots of good MCP servers out there and editors like Cursor support
+them. For now, only Anthropic Claude LLM supports them, so make sure to use it
+Claude when you want to work with MCP tools.
+
+I listed some interesting MCP servers above.
 
 📚 Resources:
 
-- https://mcpslop.com/
+- [MCP](https://modelcontextprotocol.io/)
+- [SLOP](https://github.com/agnt-gg/slop)
+- [MCP vs SLOP](https://mcpslop.com/)
+- [A2A](https://google.github.io/A2A/)
 
 ## Creating my own MCP server
 
@@ -326,30 +378,11 @@ Agent to implement it. Give a mini-PRD for the specific feature. Imagine that
 you're guiding a junior developer to work in a specific GH ticket :-)
 
 ## Should I use TDD or any other type of tests?
+*TODO*
 ## How to make it safe?
+*TODO*
 ## How to get structured data? How to validate the LLM output?
-## I want to learn more about all this code the AI is generating
-
-Do you need to understand programming? Computer and systems fundamentals? Not entirely,
-but I truly believe in computer literacy: everybody should learn how to code and to understand
-how systems work, and it's never been more true than now.
-
-I prepared some  "down the rabbit hole" sessions here. They are not finite on themselves but
-they provide pointers to were to know more about fundamentals concepts that would ground
-your AI coding skills.
-
-- Going deeper the code gen rabbit hole... Let's build a code assistant ourselves!
-    - Show lilcoder, different versions
-- Going deeper the web dev rabbit hole
-    - Explain how web works, webapps, etc
-- Going deeper the LLM rabbit hole
-    - CoT
-    - RAG and CAG
-    - LangChain and LangGraph, Autogen
-    - Embeddings and vector databases: LlamaIndex, MongoDB Vector DB, Pinecone, ...
-    - Validating outputs of LLMs: https://github.com/confident-ai/deepeval
-      - https://github.com/mongodb-developer/GenAI-Showcase
-
+*TODO*
 # Tools
 
 Here I keep an updated list of main tools around using AI for coding. I tested
@@ -410,6 +443,12 @@ Special thanks to:
 
 * Gabriela Thumé for everything <3
 * ChatGPT 4o for generating all the images you see here :-)
+
+# Contributing
+
+If you want to contribute with corrections, feedbacks or some missing tool or
+reference, please feel free to open a new PR, a new issue or get in touch with
+me: [@aut0mata](https://x.com/aut0mata).
 
 # License
 
