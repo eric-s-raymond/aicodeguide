@@ -1,4 +1,12 @@
-# AI Code Guide
+<div align="center">
+<img src="https://i.imgur.com/iIq2PJu.png" alt="AI Code Guide">
+  <p align="center">
+    𝕏 <a href="https://x.com/aut0mata">Follow me on X</a> • 
+    🤗 <a href="https://void.cc">My personal website</a> • 
+    💻 <a href="https://github.com/automata">My GitHub</a>
+  </p>
+</div>
+<br/>
 
 Everything you wanted to know about using AI to code.
 
@@ -74,6 +82,8 @@ AI coding and move on.
 If you know what's all about, please move on for the next section. Otherwise,
 just a few words about our main guys here.
 
+# The Roadmap
+
 ## How I start?
 
 If you don't know how to code and want to play with it, I recommend starting
@@ -86,10 +96,14 @@ If you already know how to code and is a terminal maniac like me, check aider.
 Install those tools, some are free to use, some will ask you for a $20-ish
 monthly plan (I pay for Cursor, for instance).
 
+📚 Resources:
+
 ## How I prompt for coding?
 
 After you installed, played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to
+
+📚 Resources:
 
 ## How I avoid hallucinations?
 
@@ -159,6 +173,14 @@ most of them and you'll find my honest opinion during the time I tested.
 - Cursor
 - Cline
 - Windsurf
+- OpenHands
+
+## CLI
+
+- Claude Code
+- Aider
+- Claude Engineer
+- Roo
 
 ## Webapps
  
@@ -225,3 +247,11 @@ most of them and you'll find my honest opinion during the time I tested.
 - https://mcpslop.com/
 - https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it
 - https://github.com/mongodb-developer/GenAI-Showcase
+
+# Acknowledgements
+
+This guide was inspired by the great [llm-course](https://github.com/milanm/DevOps-Roadmap) from Maxime Labonne.
+
+Special thanks to:
+
+* Gabriela Thumé for everything <3
