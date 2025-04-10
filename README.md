@@ -11,19 +11,18 @@
 > Everything you wanted to know about using AI to help you code and/or to code
 > for you.
 
-<div align="center" style="font-size: 20px">
+<div align="center" style="font-size: 30px">
   <a href="#vibe">TL;DR Just show me how to vibe code 😎!</a>
 </div>
 
 ## Introduction
 
-It's April of 2025, I just arrived in the sunny Munich -- I live in London but I'm here for a
-work trip -- and I decided to open my laptop, pop a *Club Mate* and dump
+It's April of 2025, I just arrived in the sunny Munich and I decided to open my laptop,
+pop a *Club Mate* and dump
 everything I have been researching around **AI to help on code generation**.
 
-I've been following hypes and trends for a long time
-and the way we interact with computers and code them is
-changing. And it's a profound change, on the tools we use, the
+The way we interact with computers and code them is
+changing. And it's a profound change: on the tools we use, the
 way we code and think about software products and systems.
 
 And it's changing super fast! New LLM models are being released every week. New
@@ -154,7 +153,7 @@ It's important to know how to prompt well. Some tips:
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
-Step 1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:
+1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:
 
 ```
 You're a senior software engineer. We're going to build the PRD of a project
@@ -170,7 +169,7 @@ IDEA:
 
 ```
 
-- 2. You're going to enter in a loop of questions/answers for a few minutes. Try
+2. You're going to enter in a loop of questions/answers for a few minutes. Try
    to answer as much as you can with as much details as possible. When finished
    (or when you decide it's enough), send this prompt to guide the model to
    compile it as a PRD:
@@ -250,6 +249,9 @@ list of goals/use you might have and which model to use it for:
 | Coding (Chat)        | Claude 3.5 Sonnet                 |
 
 ## What are Cursor rules?
+
+*TODO*
+
 ## How I avoid hallucinations? What is a PRD?
 
 PRD. What?! They say that the best ways to solve a problem in engineering is to
@@ -268,25 +270,17 @@ people who never coded before to senior SWE.
 You don't need any background to start a PRD, you just need your idea for an
 app and that's it.
 
-To write a PRD, you can follow some strategies:
-
-Strategy 1:
-
-Open ChatGPT and copy-and-paste the following prompt:
-
-...
-
-Strategy 2:
-
-In Cursor, ...
+Check <a href="#vibe">here</a> how to use a LLM to create one for you.
 
 ## How I start my project?
 
 ### Webapp
 
+*TODO: Start a React or Nextjs  project with a starter kit*
+
 ### Backend
 
-### Python Project
+*TODO: Start a Python FastAPI project with uv*
 
 ## How I deal with errors and bugs?
 
@@ -297,16 +291,40 @@ that and be friends with errors and bugs.
 The first strategy here is to mimic what SWE do: see what the
 interpreter/compiler gave to you as an error message and try to understand it. 
 
-Another great idea is to add MCP tools great for debugging like browser one 
+Another great idea is to add MCP tools great for debugging like
+[BrowserTools](https://browsertools.agentdesk.ai/).
 
-## What's MCP (and SLOP) and how can I benefit from it?
+## What's MCP, SLOP and A2A and how can I benefit from it?
+
+
+📚 Resources:
+
 - https://mcpslop.com/
+
 ## Creating my own MCP server
+
+*TODO*
+
 ## Start from scratch or with a boilerplate?
+
+Generally LLMs do better starting fresh. But you can also start with a
+boilerplate and add rules in the context window to make it sure it will respect
+your starter kit.
+
+Another great idea is to index your project (that you just created with the
+starter kit) using Cursor's own indexing feature, or using some tool like
+repomix 
+
 ## Greenfield/clean state/fresh project vs existing codebase
-- And if my code already exists?
-    - repomix, llmtxt and other ways to fit your code base into LLMs
-    - go per task instead of per project!
+
+If you have an existing codebase, a good idea is to use repomix or llmtxt to
+pack it into the context window.
+
+Another great tip is to prompt for changes at task level and not in project
+level. For instance, focus in one feature you want to implement and ask Cursor
+Agent to implement it. Give a mini-PRD for the specific feature. Imagine that
+you're guiding a junior developer to work in a specific GH ticket :-)
+
 ## Should I use TDD or any other type of tests?
 ## How to make it safe?
 ## How to get structured data? How to validate the LLM output?
