@@ -129,7 +129,7 @@ have to worry about it.
 
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
 
-## 2. TL;DR How I prompt for coding? a.k.a how to vibe code well?
+## 2. TL;DR How I prompt for coding? AKA How to vibe code?
 
 After you installed and played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to fix a possible error, etc.
@@ -151,7 +151,8 @@ It's important to know how to prompt well. Some tips:
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
-1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:
+**Step 1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:**
+
 ```
 You're a senior software engineer. We're going to build the PRD of a project
 together.
@@ -163,11 +164,14 @@ VERY IMPORTANT:
 
 IDEA:
 <paste here your idea>
+
 ```
-2. You're going to enter in a loop of questions/answers for a few minutes. Try
+
+**Step 2. You're going to enter in a loop of questions/answers for a few minutes. Try
    to answer as much as you can with as much details as possible. When finished
    (or when you decide it's enough), send this prompt to guide the model to
-   compile it as a PRD:
+   compile it as a PRD:**
+
 ```
 Compile those findings into a PRD. Use markdown format. It should contain the
 following sections:
@@ -180,6 +184,7 @@ following sections:
 - Techstack
 - Implementation plan
 ```
+
 3. Copy and save this file into a `docs/specs.md` inside your project folder
 4. Now let's create the task list for your project. Ask the following:
 ```
