@@ -32,10 +32,9 @@ write this guide. It's my humble attempt to put everything together and present
 you the practices and tools around **AI coding** or **AI assisted code generation**, all in one
 place, with no fluf, in an accessible form.
 
-- **If you're a coder/dev/SWE/MLE who already know how to code but is not using
-  AI code assistants yet**, this guide is for you: it presents the most
+- **If you're a coder but is not using AI code assistants yet**, this guide is for you: it presents the most
   recent tools and good practices to make the most of them to help on your daily
-  jobs. Either having AI as your copilot or being the copilot for a AI agent.
+  jobs. Either having AI as your copilot or being the copilot for an AI agent.
 
 - **If you never coded before but you're interested in this new "vibe coding"
   thing to build your own SaaS and other software products**, this guide is
@@ -96,7 +95,7 @@ IMHO you should learn and practice both!
 
 # 🗺️ The Roadmap
 
-## 1. How I start?
+## How I start?
 
 - If you don't know how to code and want to play with it, I recommend starting
 with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.com)
@@ -129,7 +128,7 @@ have to worry about it.
 
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
 
-## 2. TL;DR How I prompt for coding? AKA How to vibe code?
+## How I prompt for coding? AKA How I vibe code?
 
 After you installed and played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to fix a possible error, etc.
@@ -145,13 +144,13 @@ It's important to know how to prompt well. Some tips:
 - Create a PRD first. Check the session above about it, it makes a world of
   difference.
 - Break you project into tasks and subtasks.
-- Try different models for different goals
-- Try different models to confirm
-- LLMs are "yes machines", so be critic
+- Try different models for different goals.
+- Try different models to confirm and validate output of other models.
+- LLMs are "yes machines", so be critic.
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
-**Step 1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:**
+Step 1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:
 
 ```
 You're a senior software engineer. We're going to build the PRD of a project
@@ -167,10 +166,10 @@ IDEA:
 
 ```
 
-**Step 2. You're going to enter in a loop of questions/answers for a few minutes. Try
+- 2. You're going to enter in a loop of questions/answers for a few minutes. Try
    to answer as much as you can with as much details as possible. When finished
    (or when you decide it's enough), send this prompt to guide the model to
-   compile it as a PRD:**
+   compile it as a PRD:
 
 ```
 Compile those findings into a PRD. Use markdown format. It should contain the
@@ -235,15 +234,19 @@ part 2 of the previous post, where Geoff suggests to use LLMs to build specs
 
 ## Which LLM model I should use?
 
-| Goal | Models |
-|----|----|
-| Brainstorming | ChatGPT 4.5, 4o,  |
-| PRD creation | |
-| Task split | |
-| Coding | |
+LLMs are trained and finetuned with different goals, here is a comprehensive
+list of goals/use you might have and which model to use it for:
+
+| Goal                 | Models                            |
+|----------------------|-----------------------------------|
+| Brainstorming        | GPT 4.5, 4o, o3                   |
+| PRD creation         | GPT o1-pro                        |
+| Task split           | GPT o1-pro                        |
+| Coding (Agent mode)  | Gemini 2.5 Pro, Claude 3.7 Sonnet |
+| Coding (Chat)        | Claude 3.5 Sonnet                 |
 
 ## What are Cursor rules?
-## 3. How I avoid hallucinations? What is a PRD?
+## How I avoid hallucinations? What is a PRD?
 
 PRD. What?! They say that the best ways to solve a problem in engineering is to
 create a new achronym and here it's no exception :-) J/k... PRD is short for
@@ -281,7 +284,7 @@ In Cursor, ...
 
 ### Python Project
 
-## 4. How I deal with errors and bugs?
+## How I deal with errors and bugs?
 
 One thing you must know about coding and softwares in general: they will fail.
 No matter what you try to prevent that, it will happen. So let's first embrace
@@ -292,7 +295,7 @@ interpreter/compiler gave to you as an error message and try to understand it.
 
 Another great idea is to add MCP tools great for debugging like browser one 
 
-## 5. What's MCP (and SLOP) and how can I benefit from it?
+## What's MCP (and SLOP) and how can I benefit from it?
 - https://mcpslop.com/
 ## Creating my own MCP server
 ## Start from scratch or with a boilerplate?
@@ -323,8 +326,7 @@ your AI coding skills.
     - LangChain and LangGraph, Autogen
     - Embeddings and vector databases: LlamaIndex, MongoDB Vector DB, Pinecone, ...
     - Validating outputs of LLMs: https://github.com/confident-ai/deepeval
-	- https://github.com/mongodb-developer/GenAI-Showcase
-
+      - https://github.com/mongodb-developer/GenAI-Showcase
 
 # Tools
 
@@ -333,36 +335,46 @@ most of them and you'll find my honest opinion during the time I tested.
 
 ## Editors / IDE
 
-- Cursor
-- Cline
-- Windsurf
-- OpenHands
+- [Cursor](https://cursor.com)
+  - The go-to AI editor, the one I use daily in my daily job and side projects
+  - Pricing: Free and then starts with $20
+- [Windsurf](https://windsurf.com)
+- [Cline](https://cline.bot/)
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands)
+- [Devin](https://devin.ai)
+- [VSCode + GitHub Copilot](https://code.visualstudio.com/docs/copilot/setup)
 
 ## CLI
 
-- Claude Code
-- Aider
-- Claude Engineer
-- Roo
+- [Claude Code](https://github.com/anthropics/claude-code)
+- [Aider](http://aider.chat/)
+- [Claude Engineer](https://github.com/Doriandarko/claude-engineer)
+- [Roo Code](https://github.com/RooVetGit/Roo-Code)
 
 ## Webapps
- 
-- Bolt
-- Replt
-- Lovable
 
-## Misc
+- [Bolt](https://bolt.new)
+- [Replit](https://replit.com)
+- [Lovable](https://lovable.dev)
 
-- Task master
-- CodeGuide
-- repomix
+## Helpful Tools
+
+- [Claude Task master](https://github.com/eyaltoledano/claude-task-master)
+- [CodeGuide](https://www.codeguide.dev/)
+- [repomix](https://repomix.com/)
 
 ## MCP Servers
 
 # Who to follow
 
 - [@GeoffreyHuntley](https://x.com/GeoffreyHuntley)
-- []()
+- [@NathanWilbanks_](https://x.com/NathanWilbanks_)
+- [@skcd42](https://x.com/skcd42)
+- [@xingyaow_](https://x.com/xingyaow_)
+- [@_catwu](https://x.com/_catwu)
+- [@EyalToledano](https://x.com/EyalToledano)
+- [@skirano](https://x.com/skirano)
+- [@beyang](https://x.com/beyang)
 
 # Acknowledgements
 
@@ -372,3 +384,7 @@ Special thanks to:
 
 * Gabriela Thumé for everything <3
 * ChatGPT 4o for generating all the images you see here :-)
+
+# License
+
+MIT
