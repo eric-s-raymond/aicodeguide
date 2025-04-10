@@ -128,7 +128,7 @@ have to worry about it.
 
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
 
-## 2. How I prompt for coding? a.k.a how to vibe code well?
+## 2. TL;DR How I prompt for coding? a.k.a how to vibe code well?
 
 After you installed and played with those tools a bit, you'll notice they will
 hallucinate, enter in endless cycles of trying to fix a possible error, etc.
@@ -150,7 +150,7 @@ It's important to know how to prompt well. Some tips:
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
-1. Use ChatGPT o3 or 4o with the following prompt:
+1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:
 ```
 You're a senior software engineer. We're going to build the PRD of a project
 together.
@@ -200,20 +200,38 @@ VERY IMPORTANT:
 ```
 5. Save this as `docs/todo.md` inside your project folder
 
+This should give you the PRD and the tasks lists to build your project! With
+that in hands, you can open your Cursor (or other AI code editor), point it to
+those files and ask:
+
+```
+You're a senior software engineer. Study @docs/specs.md and implement what's
+still missing in @docs/todo.md. Implement each task each time and respect task
+and subtask dependencies. Once finished a task, check it in the list and move
+to the next.
+```
+
+Enable YOLO mode the first time Cursor Agent executes a command and then keep
+accepting or asking `continue` in the prompt.
+
+In the case of Cursor, sometimes the LLM will reach some limits and ask for
+retry. Just do it and continue. Yep, you're vibe coding :-)
+
 📚 Resources:
 
 - [You are using Cursor AI incorrectly...](https://ghuntley.com/stdlib/) by Geoffrey Huntley:
 here Geoff introduces his
-idea of using a stdlib of Cursor rules and keep growing it automatically
+idea of using a stdlib of Cursor rules
 - [From Design doc to code: the Groundhog AI coding assistant (and new Cursor vibecoding meta)](https://ghuntley.com/specs/) by Geoffrey Huntley:
-after 
+part 2 of the previous post, where Geoff suggests to use LLMs to build specs
+(PRD) and Cursor rules automatically
 - [My LLM codegen workflow atm](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/)
 
 ## Which LLM model I should use?
 
 | Goal | Models |
 |======|=======|
-| Brainstorming | ChatGPT |
+| Brainstorming | ChatGPT 4.5, 4o,  |
 | PRD creation | |
 | Task split | |
 | Coding | |
