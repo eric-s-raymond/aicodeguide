@@ -33,7 +33,7 @@ scattered in different places, websites, repos, YouTube videos, etc.
 That's why I decided to
 write this guide. It's my humble attempt to put everything together and present
 you the practices and tools around **AI coding** or **AI assisted code generation**, all in one
-place, with no fluf, in an accessible form.
+place, with no fuss, in an accessible form.
 
 - **If you're a coder but is not using AI code assistants yet**, this guide is for you: it presents the most
   recent tools and good practices to make the most of them to help on your daily
