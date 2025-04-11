@@ -114,7 +114,7 @@ You run it as a Docker container
 that exposes a webapp. You'll have to create an [Anthropic API account](https://console.anthropic.com/) to get access to an API key,
 or use some LLM available in [OpenRouter](https://openrouter.ai/).
 
-- If you already know how to code and is a terminal maniac like me, check [aider](https://aider.chat/) and [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview).
+- If you already know how to code and are a terminal maniac like me, check [aider](https://aider.chat/) and [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview).
 For those you'll need to setup API keys for Anthropic Claude or for OpenRouter.
 
 > Suggestion: I really recommend creating an account in OpenRouter. It's really easy and you'll
@@ -141,16 +141,15 @@ It's important to know how to prompt well. Some tips:
 - Do not ask everything in one prompt. Only prompting "hey, building me an app
   to for my pet store" doesn't help a software engineer and much less an AI :-)
   Understand your project, brainstorm first with an LLM, create a PRD
-  (requirements), make a plan and split them in tasks.
+  (Product Requirements Document), make a plan and split them in tasks. You'll
+  find bellow a recipe on how to use ChatGPT to create one for you.
 - Give it details. If you know what you want, say it. If you know which
   programming language you want, which tech stack, what type of audience, add
   it to your prompt.
-- Create a PRD first. Check the session above about it, it makes a world of
-  difference.
 - Break you project into tasks and subtasks.
 - Try different models for different goals.
 - Try different models to confirm and validate output of other models.
-- LLMs are "yes machines", so be critic.
+- LLMs are "yes machines", so apply critical thinking.
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
@@ -356,7 +355,7 @@ side.
 
 A2A (Agent to Agent Protocol) is pretty recent in the game. It was created by
 Google to "complement" MCP, focusing on multiagent communication while MCP
-focus on LLM-tools communications.
+focuses on LLM-tools communications.
 
 > Important: There are lots of good MCP servers out there and editors like Cursor support
 them. For now, only Anthropic Claude LLM supports them, so make sure to use it
@@ -380,16 +379,19 @@ https://github.com/modelcontextprotocol/servers
 ## Start from scratch or with a boilerplate?
 
 Generally LLMs do better starting fresh. But you can also start with a
-boilerplate and add rules in the context window to make it sure it will respect
+boilerplate (basically a starter kit: a folder with initial skeletons of
+minimal source files and configs needed to get a working project running for a
+specific tech stack) and add rules in the context window to make it sure it will respect
 your starter kit.
 
 Another great idea is to index your project (that you just created with the
 starter kit) using Cursor's own indexing feature, or using some tool like
-repomix 
+[repomix](https://repomix.com/).
 
 ## Greenfield/clean state/fresh project vs existing codebase
 
-If you have an existing codebase, a good idea is to use repomix or llmtxt to
+If you have an existing codebase, a good idea is to use
+[repomix](https://repomix.com/) or even [llmtxt](https://llmtext.com/)
 pack it into the context window.
 
 Another great tip is to prompt for changes at task level and not in project
@@ -466,6 +468,7 @@ This guide was inspired by the great [llm-course](https://github.com/milanm/DevO
 Special thanks to:
 
 * Gabriela Thumé for everything ❤️
+* Albert Espín for thoughtful feedback and the first error corrections
 * ChatGPT 4o for generating the banner you see on the top, inspired by the
   incredible artist [Deathburger](https://citadel9.com/)
 
