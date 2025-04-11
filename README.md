@@ -232,6 +232,9 @@ accepting or asking `continue` in the prompt.
 In the case of Cursor, sometimes the LLM will reach some limits and ask for
 retry. Just do it and continue. Yep, you're vibe coding :-)
 
+And here you'll find the Git repos for a CLI tool built in 10 min based on the
+this workflow: https://github.com/automata/localbiz
+
 > Important: although it's super cool to "vibe code", it's also really
 > interesting to know what you're doing :-) Reviewing the code the agent is
 > generating will also help you a lot when errors happen (and they will!) and
