@@ -347,8 +347,9 @@ MCP server that will expose some resource (a database, for instance) or tool (a
 specific piece of software that will compute something and return the results,
 for instance) to the LLM.
 
-Wait, but it's not just an API? Couldn't I just mimic the same with an HTTP API
+Wait, but it's not just an API? Couldn't I just mimic the same with a REST API
 server/client and some parsing in the LLM prompts? Kinda, and that's what SLOP
+(Simple Language Open Protocol)
 proposes. However, having a standard like MCP makes it easier to make sure the
 LLM will support it natively without extra parsing and tricks on the client
 side.
@@ -368,6 +369,7 @@ https://github.com/modelcontextprotocol/servers
 
 - [MCP](https://modelcontextprotocol.io/)
 - [SLOP](https://github.com/agnt-gg/slop)
+- [Introducing SLOP](https://russell.ballestrini.net/introducing-slop/)
 - [MCP vs SLOP](https://mcpslop.com/)
 - [A2A](https://google.github.io/A2A/)
 
