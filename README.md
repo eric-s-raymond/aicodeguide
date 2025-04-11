@@ -235,6 +235,8 @@ idea of using a stdlib of Cursor rules
 part 2 of the previous post, where Geoff suggests to use LLMs to build specs
 (PRD) and Cursor rules automatically
 - [My LLM codegen workflow atm](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/) by Harper Reed
+- [Prompt Engineering](https://www.kaggle.com/whitepaper-prompt-engineering) by Lee Boonstra from Google: it's a 70 pages doc with interesting tips
+  on how to prompt engineer, with a section about code generation
 
 ## Which LLM model I should use?
 
