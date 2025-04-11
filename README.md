@@ -209,6 +209,12 @@ VERY IMPORTANT:
 ```
 5. Save this as `docs/todo.md` inside your project folder
 
+[Here is an example](https://chatgpt.com/share/67f8e8c6-c92c-8007-8fe0-76bdc73f9812) of a brainstorming/planning session I did with ChatGPT 4o
+for a simple CLI tool, use it as inspiration for yours.
+
+Now create a local folder for you project, remember to install and run `git
+init` inside the folder to keep it under version control.
+
 This should give you the PRD and the tasks lists to build your project! With
 that in hands, you can open your Cursor (or other AI code editor), point it to
 those files and ask:
@@ -225,6 +231,12 @@ accepting or asking `continue` in the prompt.
 
 In the case of Cursor, sometimes the LLM will reach some limits and ask for
 retry. Just do it and continue. Yep, you're vibe coding :-)
+
+> Important: although it's super cool to "vibe code", it's also really
+> interesting to know what you're doing :-) Reviewing the code the agent is
+> generating will also help you a lot when errors happen (and they will!) and
+> to improve your skills on code reviewing (not only made by AIs but by
+> yourself and other developers).
 
 📚 Resources:
 
