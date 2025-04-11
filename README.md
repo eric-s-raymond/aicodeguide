@@ -130,6 +130,7 @@ have to worry about it.
 📚 Resources:
 
 - [Vibe Coding 101 with Replit](https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/)
+- [Cursor AI Tutorial for Beginners [2025 Edition]](https://www.youtube.com/watch?v=3289vhOUdKA)
 
 ## How I prompt for coding? AKA How I vibe code?<a id='vibe'></a>
 
@@ -414,6 +415,11 @@ most of them and you'll find my honest opinion during the time I tested.
 - [Bolt](https://bolt.new)
 - [Replit](https://replit.com)
 - [Lovable](https://lovable.dev)
+- [Firebase Studio](https://firebase.studio/)
+
+## Agents
+
+- [ZenCoder](https://zencoder.ai/)
 
 ## Helpful Tools
 
