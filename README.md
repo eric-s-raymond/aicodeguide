@@ -306,7 +306,8 @@ for you! [Check Geoff's method on that](https://ghuntley.com/specs/).
 
 - [Cursor Rules Docs](https://docs.cursor.com/context/rules-for-ai)
 - [Windsurf Rules Docs](https://windsurf.com/editor/directory)
-- [Aider Conventions](https://aider.chat/docs/usage/conventions.html)
+- [Aider Conventions Docs](https://aider.chat/docs/usage/conventions.html)
+- [Aider Conventions Collection](https://github.com/Aider-AI/conventions): a collection of community-contributed convention files for use with Aider.
 
 ## How I avoid hallucinations? What is a PRD?
 
