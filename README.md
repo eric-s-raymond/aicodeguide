@@ -15,6 +15,13 @@
   <a href="#vibe">TL;DR Just show me how to vibe code 😎!</a>
 </div>
 
+<div align="center">
+<img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="300px">
+  <p align="center">
+    <a href="https://x.com/esrtweet/status/1910809356381413593">The legendary coder ESR</a>
+  </p>
+</div>
+
 ## Introduction
 
 It's April of 2025, I just arrived in the sunny Munich and I decided to open my laptop,
@@ -460,13 +467,6 @@ most of them and you'll find my honest opinion during the time I tested.
 - [repomix](https://repomix.com/)
 
 # 🤗 Who to follow
-
-<div align="center">
-<img src="https://i.imgur.com/ChMRNCA.png" alt="ESR">
-  <p align="center">
-    <a href="https://x.com/esrtweet/status/1910809356381413593">The legendary coder ESR</a>
-  </p>
-</div>
 
 Some super interesting people implementing AI coding models/tools or using it
 on their own projects.
