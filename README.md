@@ -459,7 +459,7 @@ Quoting ESR:
 
 > More generally, when you prompt, think about separating engine code from policy code, and issue your prompts in a sequence that guides the LLM to do that.
 
-> You should include in your project rules one that tells the LLM not to violate layering - if it needs a new engine method, it should add someting to a clean encapsulation layer rather than having low-level implementation details entangled with business logic.
+> You should include in your project rules, one that tells the LLM not to violate layering - if it needs a new engine method, it should add something to a clean encapsulation layer rather than having low-level implementation details entangled with business logic.
 
 Another interesting practice is to start with the core of you project: in Python, I generally
 see my project as a core library/module and I spend lots of time making sure I get the main
