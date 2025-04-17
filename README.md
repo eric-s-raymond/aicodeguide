@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-<img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="300px">
+<img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
   <p align="center">
     <a href="https://x.com/esrtweet/status/1910809356381413593">The legendary coder ESR</a>
   </p>
