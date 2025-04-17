@@ -318,6 +318,36 @@ app and that's it.
 
 Check <a href="#vibe">here</a> how to use a LLM to create one for you.
 
+## Keep a prompt log
+
+The great [ESR](http://www.catb.org/esr/) suggested to keep a log of your prompts.
+It's such a great idea that I'm quoting him here:
+
+> Record every prompt you send, with (this is important) your interspersed comments on what you were thinking and any surprises you got. This prompt log is your record of design intent; it will be invaluable to anyone approaching the project without having been involved in it, including you in six months after you have forgotten what you are thinking.
+
+> There isn't any convention for the name of this file yet: I use "vibecode.adoc".
+
+There are tools like [aider](https://aider.chat/) that keep a log of all the back-and-forth
+chat you had with your LLM.
+So one option is to set the following env vars and keep all those history files under version control:
+
+```bash
+# History Files:
+
+## Specify the chat input history file (default: .aider.input.history)
+#AIDER_INPUT_HISTORY_FILE=.aider.input.history
+
+## Specify the chat history file (default: .aider.chat.history.md)
+#AIDER_CHAT_HISTORY_FILE=.aider.chat.history.md
+
+## Log the conversation with the LLM to this file (for example, .aider.llm.history)
+#AIDER_LLM_HISTORY_FILE=.aider.llm.history
+```
+
+With those files in hand, you can then comment on them with your own thoughts while you go.
+You (and others) can learn a lot about your project when you revisit it in the future, and
+you'll probably start noticing patterns and tips you can use in your next sessions.
+
 ## How I start my project?
 
 ### Webapp
