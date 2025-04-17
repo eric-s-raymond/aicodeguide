@@ -519,6 +519,7 @@ most of them and you'll find my honest opinion during the time I tested.
 - [Claude Task master](https://github.com/eyaltoledano/claude-task-master)
 - [CodeGuide](https://www.codeguide.dev/)
 - [repomix](https://repomix.com/)
+- [Repo Prompt](https://repoprompt.com/)
 
 # 🤗 Who to follow
 
