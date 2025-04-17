@@ -1,8 +1,8 @@
 <div align="center">
 <img src="https://i.imgur.com/v0Tx6am.png" alt="AI Code Guide">
   <p align="center">
-    𝕏 By <a href="https://x.com/aut0mata">Vilson Vieira</a> and
-         <a href="https://x.com/esrtweet">Eric S. Raymond</a>
+    By <a href="https://x.com/aut0mata">Vilson Vieira</a> and
+       <a href="https://x.com/esrtweet">Eric S. Raymond</a>
   </p>
 </div>
 <br/>
