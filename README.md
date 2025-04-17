@@ -287,16 +287,19 @@ list of goals/use you might have and which model to use it for:
 | Coding (Agent mode)  | Gemini 2.5 Pro, Claude 3.7 Sonnet, GPT 4.1 |
 | Coding (Chat)        | Claude 3.5 Sonnet                          |
 
-## What are Cursor rules?
+## How do I set up project-wide rules?
 
-Those are rules or conventions that will be applied to your project by "injecting" them in the
-context of the LLM. Each editor have some ways to do it.
+You can define rules or conventions that will be applied to your project by "injecting" them in the
+context of the LLM. Each editor have some ways to do it:
 
 - In Cursor, just create
 markdown files inside a `.cursor/rules/` folder. Cursor will make it sure to
 apply those on all communication with the LLM.
 - In Aider, create markdown files with [rules/conventions](https://aider.chat/docs/usage/conventions.html) you want to use (like `rules.md`)
 and add the following in your `.aider.conf.yml` file: `read: rules.md`.
+
+Also, many tools support configuring a rules/conventions file in your home directory to be applied to all your projects. For instance, in Aider you can basically add global conventions in a file
+called `~/.global_conventions.md` and then add it to the `.aider.conf.yml` with `read: [~/.global_conventions.md, rules.md]`.
 
 You can add part of your PRD as rules, for instance, like the tech stack or
 some guidelines on code formating and style.
