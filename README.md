@@ -81,7 +81,7 @@ code. Generally you have people who already know how to code in this group.
 
 Vibe coding is AI coding cranked up :-) Here you don't care much about the code
 being generated, you just give a prompt and expect the AI to code everything
-for you. The term was created by Karpathy in 2024 and it's getting pretty
+for you. The term was [coined by Karpathy](https://x.com/karpathy/status/1886192184808149383) in 2025 and it's getting pretty
 popular. IMHO it's helping to democratize coding for everyone that never
 thought about coding before!
 
@@ -120,7 +120,7 @@ with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.
 - If you already know how to code, install [Cursor](https://cursor.com/) or [Windsurf](https://windsurf.com/).
 You can start with the
 free plan and then upgrade to $20 monthly plan. I pay for Cursor, it's pretty good and cheap,
-given you'll have tons of tokens to use on most recent LLM models out there.
+given you'll have tons of tokens to use on most recent LLM models out there.  VSCode recently introduced their own [Agent Mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode) as well. It pairs with Github Copilot and uses and Agentic Workflow to make changes and edit files.  Other editors are rapidly adding Agentic features, so check your favorite editor's website for more information. These agentic features are often only enabled within Beta or Insider builds.
 
 - If you want a more open source alternative, try [OpenHands](https://github.com/All-Hands-AI/OpenHands).
 You run it as a Docker container
@@ -164,6 +164,8 @@ It's important to know how to prompt well. Some tips:
 - Try different models for different goals.
 - Try different models to confirm and validate output of other models.
 - LLMs are "yes machines", so apply critical thinking.
+
+> Context: AI Models need context. [RepoPrompt](https://repoprompt.com/) is a tool to help assemble context from your project. It's worth watching an overview video of a [RepoPrompt Workflow](https://www.youtube.com/watch?v=fm3VreCt-5E) to learn how to easily leverage these tools to provide more context in your vibe coding prompts.
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
