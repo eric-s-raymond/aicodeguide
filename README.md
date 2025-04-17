@@ -574,6 +574,7 @@ Special thanks to:
 
 * [Gabriela Thumé](https://github.com/gabithume) for everything ❤️
 * [Albert Espín](https://github.com/albert-espin) for thoughtful feedback and the first error corrections
+* [Eric S. Raymond](http://www.catb.org/esr/) (ESR) for his incredible contributions, corrections and for [supporting](https://x.com/esrtweet/status/1910809356381413593) this guide!
 * ChatGPT 4o for generating the banner you see on the top, inspired by the
   incredible artist [Deathburger](https://citadel9.com/)
 
