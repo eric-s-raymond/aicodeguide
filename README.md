@@ -586,6 +586,6 @@ me: [@aut0mata](https://x.com/aut0mata).
 
 If you like this guide, please consider giving it a star ⭐ and follow it for new updates!
 
-# ⚖️ Lcense
+# ⚖️ License
 
 MIT
