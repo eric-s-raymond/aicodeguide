@@ -584,6 +584,8 @@ If you want to contribute with corrections, feedbacks or some missing tool or
 reference, please feel free to open a new PR, a new issue or get in touch with
 me: [@aut0mata](https://x.com/aut0mata).
 
+If you like this guide, please consider giving it a star ⭐ and follow it for new updates!
+
 # ⚖️ Lcense
 
 MIT
