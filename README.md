@@ -1,9 +1,8 @@
 <div align="center">
 <img src="https://i.imgur.com/v0Tx6am.png" alt="AI Code Guide">
   <p align="center">
-    𝕏 <a href="https://x.com/aut0mata">Follow me on X</a> • 
-    🤗 <a href="https://void.cc">My personal website</a> • 
-    💻 <a href="https://github.com/automata">My GitHub</a>
+    𝕏 By <a href="https://x.com/aut0mata">Vilson Vieira</a> and
+         <a href="https://x.com/esrtweet">Eric S. Raymond</a>
   </p>
 </div>
 <br/>
