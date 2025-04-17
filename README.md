@@ -449,6 +449,25 @@ level. For instance, focus in one feature you want to implement and ask Cursor
 Agent to implement it. Give a mini-PRD for the specific feature. Imagine that
 you're guiding a junior developer to work in a specific GH ticket :-)
 
+## Well-structured prompting for well-structured design
+
+Quoting ESR:
+
+> At present (in April 2025) LLMs are already good at generating working code, but they're not very good at generating well-structured code - that is, with proper layering and separation of concerns. Good structure is important for readability and maintainability, and reduces your defect rate.
+
+> Think through your design and then prompt-engineer it in a sequence that produces good structure. In a database-centered application, for example, it's a good idea to specify your record types first, then guide your LLM through building a manager class or module that encapsulates access to them. Only after that should you begin prompting for business logic.
+
+> More generally, when you prompt, think about separating engine code from policy code, and issue your prompts in a sequence that guides the LLM to do that.
+
+> You should include in your project rules one that tells the LLM not to violate layering - if it needs a new engine method, it should add someting to a clean encapsulation layer rather than having low-level implementation details entangled with business logic.
+
+Another interesting practice is to start with the core of you project: in Python, I generally
+see my project as a core library/module and I spend lots of time making sure I get the main
+functionality implemented and organized the way I want. I even write classes and functions
+skeletons and then let the LLM to fill the gaps. Only after I have a good foundation and with
+good tests I move to consumers of this core library, like exposing it as CLI or REST API to
+a future webapp, for instance.
+
 ## Should I use TDD or any other type of tests?
 *TODO*
 ## How to make it safe?
