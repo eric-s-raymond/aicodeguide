@@ -65,7 +65,7 @@ as main engines to power code generation, and there's also some threads on
 neurosymbolic hybrid approaches starting to show up. AI coding is also a
 practice: if you're using Cursor and tab-tab-tab your way to get completions,
 you're "AI coding"; if you're full on using Cursor's agent mode, you're also "AI
-coding". In summary: it's any way to use an AI models to help you to generate
+coding". In summary: it's any way to use AI models to help you to generate
 code. Generally you have people who already know how to code in this group.
 
 Vibe coding is AI coding cranked up :-) Here you don't care much about the code
@@ -103,8 +103,8 @@ IMHO you should learn and practice both!
 ## How I start?
 
 - If you don't know how to code and want to play with it, I recommend starting
-with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.com)
-or [Lovable](https://lovable.dev).
+with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.com),
+[v0](https://v0.dev) or [Lovable](https://lovable.dev).
 
 - If you already know how to code, install [Cursor](https://cursor.com/) or [Windsurf](https://windsurf.com/).
 You can start with the
@@ -116,8 +116,9 @@ You run it as a Docker container
 that exposes a webapp. You'll have to create an [Anthropic API account](https://console.anthropic.com/) to get access to an API key,
 or use some LLM available in [OpenRouter](https://openrouter.ai/).
 
-- If you already know how to code and are a terminal maniac like me, check [aider](https://aider.chat/) and [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview).
-For those you'll need to setup API keys for Anthropic Claude or for OpenRouter.
+- If you already know how to code and are a terminal maniac like me, check [aider](https://aider.chat/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+or [OpenAI Codex](https://github.com/openai/codex).
+For those you'll need to setup API keys for Anthropic Claude, OpenAI GPT or for OpenRouter.
 
 > Suggestion: I really recommend creating an account in OpenRouter. It's really easy and you'll
 get access to the most updated LLM models and even free versions of it. For instance,
@@ -259,13 +260,13 @@ part 2 of the previous post, where Geoff suggests to use LLMs to build specs
 LLMs are trained and finetuned with different goals, here is a comprehensive
 list of goals/use you might have and which model to use it for:
 
-| Goal                 | Models                            |
-|----------------------|-----------------------------------|
-| Brainstorming        | GPT 4.5, 4o, o3                   |
-| PRD creation         | GPT o1-pro                        |
-| Task split           | GPT o1-pro                        |
-| Coding (Agent mode)  | Gemini 2.5 Pro, Claude 3.7 Sonnet |
-| Coding (Chat)        | Claude 3.5 Sonnet                 |
+| Goal                 | Models                                     |
+|----------------------|--------------------------------------------|
+| Brainstorming        | GPT 4.5, 4o, o3                            |
+| PRD creation         | GPT o1-pro                                 |
+| Task split           | GPT o1-pro                                 |
+| Coding (Agent mode)  | Gemini 2.5 Pro, Claude 3.7 Sonnet, GPT 4.1 |
+| Coding (Chat)        | Claude 3.5 Sonnet                          |
 
 ## What are Cursor rules?
 
@@ -315,6 +316,10 @@ Check <a href="#vibe">here</a> how to use a LLM to create one for you.
 ### Backend
 
 *TODO: Start a Python FastAPI project with uv*
+
+### Game
+
+*TODO: Start a threejs project*
 
 ## How I deal with errors and bugs?
 
@@ -432,10 +437,12 @@ most of them and you'll find my honest opinion during the time I tested.
 - [Aider](http://aider.chat/)
 - [Claude Engineer](https://github.com/Doriandarko/claude-engineer)
 - [Roo Code](https://github.com/RooVetGit/Roo-Code)
+- [OpenAI Codex](https://github.com/openai/codex)
 
 ## Webapps
 
 - [Bolt](https://bolt.new)
+- [v0](https://v0.dev)
 - [Replit](https://replit.com)
 - [Lovable](https://lovable.dev)
 - [Firebase Studio](https://firebase.studio/)
@@ -483,6 +490,6 @@ If you want to contribute with corrections, feedbacks or some missing tool or
 reference, please feel free to open a new PR, a new issue or get in touch with
 me: [@aut0mata](https://x.com/aut0mata).
 
-# ⚖️ License
+# ⚖️ Lcense
 
 MIT
