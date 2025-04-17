@@ -287,7 +287,7 @@ list of goals/use you might have and which model to use it for:
 
 ## What are Cursor rules?
 
-It's rules that will be applied to your project by "injecting" them in the
+Those are rules or conventions that will be applied to your project by "injecting" them in the
 context of the LLM. Each editor have some ways to do it.
 
 - In Cursor, just create
