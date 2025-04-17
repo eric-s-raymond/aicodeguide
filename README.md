@@ -107,7 +107,9 @@ You can use AI coding in many different ways, but in summary:
   jumping in on a spaghetti of code you actually don't know about, specially to
   solve errors.
 
-IMHO you should learn and practice both!
+IMHO you should learn and practice both! But like [ESR](http://www.catb.org/esr/) points out:
+
+> Lean more towards copiloting and away from pure YOLO vibecoding as project complexity scales up. The more likely it is that another human (or yourself in six months) will have to maintain the code, the more important this is.
 
 # 🗺️ The Roadmap
 
