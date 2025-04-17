@@ -17,9 +17,11 @@
 <br /><br />
 
 <div align="center">
-<img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
+  <a href="https://x.com/esrtweet/status/1910809356381413593">
+    <img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
+  </a>
   <p align="center">
-    <a href="https://x.com/esrtweet/status/1910809356381413593">The legendary coder ESR</a>
+    <a href="https://x.com/esrtweet/status/1910809356381413593"><i>The legendary coder ESR</i></a>
   </p>
 </div>
 
