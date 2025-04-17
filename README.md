@@ -288,9 +288,13 @@ list of goals/use you might have and which model to use it for:
 ## What are Cursor rules?
 
 It's rules that will be applied to your project by "injecting" them in the
-context of the LLM. Each editor have some ways to do it. In Cursor, just create
+context of the LLM. Each editor have some ways to do it.
+
+- In Cursor, just create
 markdown files inside a `.cursor/rules/` folder. Cursor will make it sure to
 apply those on all communication with the LLM.
+- In Aider, create markdown files with [rules/conventions](https://aider.chat/docs/usage/conventions.html) you want to use (like `rules.md`)
+and add the following in your `.aider.conf.yml` file: `read: rules.md`.
 
 You can add part of your PRD as rules, for instance, like the tech stack or
 some guidelines on code formating and style.
