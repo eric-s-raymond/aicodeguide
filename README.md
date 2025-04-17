@@ -21,7 +21,7 @@
     <img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
   </a>
   <p align="center">
-    <a href="https://x.com/esrtweet/status/1910809356381413593"><i>The legendary coder ESR</i></a>
+    <a href="https://x.com/esrtweet/status/1910809356381413593"><i>The legendary hacker ESR</i></a>
   </p>
 </div>
 
@@ -160,12 +160,14 @@ It's important to know how to prompt well. Some tips:
 - Give it details. If you know what you want, say it. If you know which
   programming language you want, which tech stack, what type of audience, add
   it to your prompt.
+- Markdown or other text-based format like asciidoc should be OK for LLMs to
+  interpret. In the end the text will be encoded as tokens. However, to put emphasis
+  in specific parts of your prompt it's recommended to use some symbols
+  like [XML tags](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags).
 - Break you project into tasks and subtasks.
 - Try different models for different goals.
 - Try different models to confirm and validate output of other models.
 - LLMs are "yes machines", so apply critical thinking.
-
-> Context: AI Models need context. [RepoPrompt](https://repoprompt.com/) is a tool to help assemble context from your project. It's worth watching an overview video of a [RepoPrompt Workflow](https://www.youtube.com/watch?v=fm3VreCt-5E) to learn how to easily leverage these tools to provide more context in your vibe coding prompts.
 
 Here is a method/procedure/strategy/workflow that generally works well:
 
@@ -267,6 +269,8 @@ part 2 of the previous post, where Geoff suggests to use LLMs to build specs
 - [My LLM codegen workflow atm](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/) by Harper Reed
 - [Prompt Engineering](https://www.kaggle.com/whitepaper-prompt-engineering) by Lee Boonstra from Google: it's a 70 pages doc with interesting tips
   on how to prompt engineer, with a section about code generation
+- [Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering)
+- [RepoPrompt](https://repoprompt.com/) is a tool to help assemble context from your project. It's worth watching an overview video of a [RepoPrompt Workflow](https://www.youtube.com/watch?v=fm3VreCt-5E) to learn how to easily leverage these tools to provide more context in your vibe coding prompts.
 
 ## Which LLM model I should use?
 
