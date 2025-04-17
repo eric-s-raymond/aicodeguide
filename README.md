@@ -14,6 +14,7 @@
 <div align="center" style="font-size: 30px">
   <a href="#vibe">TL;DR Just show me how to vibe code 😎!</a>
 </div>
+<br /><br />
 
 <div align="center">
 <img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
