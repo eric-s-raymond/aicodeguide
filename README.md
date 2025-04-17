@@ -19,9 +19,6 @@
   <a href="https://x.com/esrtweet/status/1910809356381413593">
     <img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
   </a>
-  <p align="center">
-    <a href="https://x.com/esrtweet/status/1910809356381413593"><i>ESR</i></a>
-  </p>
 </div>
 
 ## Introduction
