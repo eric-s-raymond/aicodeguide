@@ -461,6 +461,13 @@ most of them and you'll find my honest opinion during the time I tested.
 
 # 🤗 Who to follow
 
+<div align="center">
+<img src="https://i.imgur.com/ChMRNCA.png" alt="ESR">
+  <p align="center">
+    <a href="https://x.com/esrtweet/status/1910809356381413593">The legendary coder ESR</a>
+  </p>
+</div>
+
 Some super interesting people implementing AI coding models/tools or using it
 on their own projects.
 
@@ -473,6 +480,7 @@ on their own projects.
 - [@EyalToledano](https://x.com/EyalToledano)
 - [@skirano](https://x.com/skirano)
 - [@beyang](https://x.com/beyang)
+- [@esrtweet](https://x.com/esrtweet)
 
 # 💖 Acknowledgements
 
