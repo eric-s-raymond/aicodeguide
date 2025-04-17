@@ -21,15 +21,11 @@
     <img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
   </a>
   <p align="center">
-    <a href="https://x.com/esrtweet/status/1910809356381413593"><i>The legendary hacker ESR</i></a>
+    <a href="https://x.com/esrtweet/status/1910809356381413593"><i>ESR</i></a>
   </p>
 </div>
 
 ## Introduction
-
-It's April of 2025, I just arrived in the sunny Munich and I decided to open my laptop,
-pop a *Club Mate* and dump
-everything I have been researching around **AI to help on code generation**.
 
 The way we interact with computers and code them is
 changing. And it's a profound change: on the tools we use, the
@@ -40,18 +36,19 @@ tools, new editors, new "vibe coding" practices, new protocols, MCP, A2A, SLOP,
 ... And it's really hard to keep track of all that. Everything is
 scattered in different places, websites, repos, YouTube videos, etc.
 
-That's why I decided to
-write this guide. It's my humble attempt to put everything together and present
+That's why we decided to
+write this guide. It's our humble attempt to put everything together and present
 you the practices and tools around **AI coding** or **AI assisted code generation**, all in one
 place, with no fuss, in an accessible form.
 
-- **If you're a coder but is not using AI code assistants yet**, this guide is for you: it presents the most
+- **If you're a coder but is not using AI code assistants yet**, this guide is
+  for you: it presents the most
   recent tools and good practices to make the most of them to help on your daily
   jobs. Either having AI as your copilot or being the copilot for an AI agent.
 
 - **If you never coded before but you're interested in this new "vibe coding"
   thing to build your own SaaS and other software products**, this guide is
-  definetely for you: I'll try to do my best to remove obscurity and leave you
+  definetely for you: We'll try to do my best to remove obscurity and leave you
   with what's required to start your journey, but being super critic about what
   is really important and what's "just hype".
 
@@ -107,21 +104,21 @@ You can use AI coding in many different ways, but in summary:
   jumping in on a spaghetti of code you actually don't know about, specially to
   solve errors.
 
-IMHO you should learn and practice both! But like [ESR](http://www.catb.org/esr/) points out:
+You should learn and practice both!
 
-> Lean more towards copiloting and away from pure YOLO vibecoding as project complexity scales up. The more likely it is that another human (or yourself in six months) will have to maintain the code, the more important this is.
+But lean more towards copiloting and away from pure YOLO vibecoding as project complexity scales up. The more likely it is that another human (or yourself in six months) will have to maintain the code, the more important this is.
 
 # 🗺️ The Roadmap
 
 ## How I start?
 
-- If you don't know how to code and want to play with it, I recommend starting
+- If you don't know how to code and want to play with it, we recommend starting
 with some web-based tool like [Bolt](https://bolt.new), [Replit](https://replit.com),
 [v0](https://v0.dev) or [Lovable](https://lovable.dev).
 
 - If you already know how to code, install [Cursor](https://cursor.com/) or [Windsurf](https://windsurf.com/).
 You can start with the
-free plan and then upgrade to $20 monthly plan. I pay for Cursor, it's pretty good and cheap,
+free plan and then upgrade to $20 monthly plan. Cursor, is pretty good and cheap,
 given you'll have tons of tokens to use on most recent LLM models out there.  VSCode recently introduced their own [Agent Mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode) as well. It pairs with Github Copilot and uses and Agentic Workflow to make changes and edit files.  Other editors are rapidly adding Agentic features, so check your favorite editor's website for more information. These agentic features are often only enabled within Beta or Insider builds.
 
 - If you want a more open source alternative, try [OpenHands](https://github.com/All-Hands-AI/OpenHands).
@@ -129,18 +126,19 @@ You run it as a Docker container
 that exposes a webapp. You'll have to create an [Anthropic API account](https://console.anthropic.com/) to get access to an API key,
 or use some LLM available in [OpenRouter](https://openrouter.ai/).
 
-- If you already know how to code and are a terminal maniac like me, check [aider](https://aider.chat/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+- If you already know how to code and are a terminal maniac like us, check [aider](https://aider.chat/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 or [OpenAI Codex](https://github.com/openai/codex).
 For those you'll need to setup API keys for Anthropic Claude, OpenAI GPT or for OpenRouter.
 
-> Suggestion: I really recommend creating an account in OpenRouter. It's really easy and you'll
+> Suggestion: We really recommend creating an account in OpenRouter. It's really easy and you'll
 get access to the most updated LLM models and even free versions of it. For instance,
-my go-to LLM model these days is Gemini 2.5 Pro and I run it through OpenRouter for free
+our go-to LLM model these days is Gemini 2.5 Pro and it's possible to run it through
+OpenRouter for free
 (there are daily quotas of credits, but it's still an interesting option for experiments
 with aider and OpenHands, for instance).
 
 > Important note: Claude Code is super expensive these days! You can easily spend $50/day.
-So be careful, monitor your usage. That's why I recommend starting with Cursor so you don't
+So be careful, monitor your usage. That's why it's recommended to start with Cursor so you don't
 have to worry about it.
 
 📚 Resources:
@@ -186,7 +184,6 @@ VERY IMPORTANT:
 
 IDEA:
 <paste here your idea>
-
 ```
 
 2. You're going to enter in a loop of questions/answers for a few minutes. Try
@@ -228,7 +225,8 @@ VERY IMPORTANT:
 ```
 5. Save this as `docs/todo.md` inside your project folder
 
-[Here is an example](https://chatgpt.com/share/67f8e8c6-c92c-8007-8fe0-76bdc73f9812) of a brainstorming/planning session I did with ChatGPT 4o
+[Here is an example](https://chatgpt.com/share/67f8e8c6-c92c-8007-8fe0-76bdc73f9812)
+of a brainstorming/planning session done with ChatGPT 4o
 for a simple CLI tool, use it as inspiration for yours.
 
 Now create a local folder for you project, remember to install and run `git
@@ -336,12 +334,10 @@ Check <a href="#vibe">here</a> how to use a LLM to create one for you.
 
 ## Keep a prompt log
 
-The great [ESR](http://www.catb.org/esr/) suggested to keep a log of your prompts.
-It's such a great idea that I'm quoting him here:
+Record every prompt you send, with (this is important) your interspersed comments on what you were thinking and any surprises you got. This prompt log is your record of design intent; it will be invaluable to anyone approaching the project without having been involved in it, including you in six months after you have forgotten what you are thinking.
 
-> Record every prompt you send, with (this is important) your interspersed comments on what you were thinking and any surprises you got. This prompt log is your record of design intent; it will be invaluable to anyone approaching the project without having been involved in it, including you in six months after you have forgotten what you are thinking.
-
-> There isn't any convention for the name of this file yet: I use "vibecode.adoc".
+There isn't any convention for the name of this file yet, you can use something like
+`vibecode.adoc` or `history.md`.
 
 There are tools like [aider](https://aider.chat/) that keep a log of all the back-and-forth
 chat you had with your LLM.
@@ -437,7 +433,6 @@ https://github.com/modelcontextprotocol/servers
 - [MCP vs SLOP](https://mcpslop.com/)
 - [A2A](https://google.github.io/A2A/)
 
-
 ## Creating my own MCP server
 
 *TODO*
@@ -467,30 +462,26 @@ you're guiding a junior developer to work in a specific GH ticket :-)
 
 ## Well-structured prompting for well-structured design
 
-Quoting [ESR](http://www.catb.org/esr/):
+At present (in April 2025) LLMs are already good at generating working code, but they're not very good at generating well-structured code - that is, with proper layering and separation of concerns. Good structure is important for readability and maintainability, and reduces your defect rate.
 
-> At present (in April 2025) LLMs are already good at generating working code, but they're not very good at generating well-structured code - that is, with proper layering and separation of concerns. Good structure is important for readability and maintainability, and reduces your defect rate.
+Think through your design and then prompt-engineer it in a sequence that produces good structure. In a database-centered application, for example, it's a good idea to specify your record types first, then guide your LLM through building a manager class or module that encapsulates access to them. Only after that should you begin prompting for business logic.
 
-> Think through your design and then prompt-engineer it in a sequence that produces good structure. In a database-centered application, for example, it's a good idea to specify your record types first, then guide your LLM through building a manager class or module that encapsulates access to them. Only after that should you begin prompting for business logic.
+More generally, when you prompt, think about separating engine code from policy code, and issue your prompts in a sequence that guides the LLM to do that.
 
-> More generally, when you prompt, think about separating engine code from policy code, and issue your prompts in a sequence that guides the LLM to do that.
+You should include in your project rules, one that tells the LLM not to violate layering - if it needs a new engine method, it should add something to a clean encapsulation layer rather than having low-level implementation details entangled with business logic.
 
-> You should include in your project rules, one that tells the LLM not to violate layering - if it needs a new engine method, it should add something to a clean encapsulation layer rather than having low-level implementation details entangled with business logic.
-
-Another interesting practice is to start with the core of you project: in Python, I generally
-see my project as a core library/module and I spend lots of time making sure I get the main
-functionality implemented and organized the way I want. I even write classes and functions
-skeletons and then let the LLM to fill the gaps. Only after I have a good foundation and with
-good tests I move to consumers of this core library, like exposing it as CLI or REST API to
+Another interesting practice is to start with the core of you project
+and spend time making sure to get the main
+functionality implemented and organized the way you want. You can even write classes and functions
+skeletons and then let the LLM fill the gaps. Only after you have a good foundation and with
+good tests you can move to consumers of this core library, like exposing it as CLI or REST API to
 a future webapp, for instance.
 
 ## Should I use TDD or any other type of tests?
 
-Quoting [ESR](http://www.catb.org/esr/):
+Yes, tests are still important. At current state of the art in 2025, LLMs are good at generating clean and correct code, but they sometimes hallucinate - and more importantly, they can fail at understanding specifications and generate correct code to do the wrong thing.
 
-> Yes, tests are still important. At current state of the art in 2025, LLMs are good at generating clean and correct code, but they sometimes hallucinate - and more importantly, they can fail at understanding specifications and generate correct code to do the wrong thing.
-
-> It is not likely that this will change even if and when we get full human-equivalent artificial general intelligence - after all, human beings misunderstand specifications too! Ambiguity of language is why tests will continue to be important even into the future.
+It is not likely that this will change even if and when we get full human-equivalent artificial general intelligence - after all, human beings misunderstand specifications too! Ambiguity of language is why tests will continue to be important even into the future.
 
 Using TDD to create skeletons of what you want as result can really help guiding LLMs to
 implement the target piece of code you're testing. Instructing your LLM to create tests and
@@ -506,19 +497,18 @@ a test: sometimes they will even try to generate some hardcoded output just to m
 
 ## How to make it safe?
 *TODO*
+
 ## How to get structured data? How to validate the LLM output?
 *TODO*
 
 # 🛠️  Tools
 
-Here I keep an updated list of main tools around using AI for coding. I tested
-most of them and you'll find my honest opinion during the time I tested.
+Here we keep an updated list of main tools around using AI for coding. We tested
+most of them and you'll find our honest opinion during the time we tested them.
 
 ## Editors / IDE
 
 - [Cursor](https://cursor.com)
-  - The go-to AI editor, the one I use daily in my daily job and side projects
-  - Pricing: Free and then starts with $20
 - [Windsurf](https://windsurf.com)
 - [Cline](https://cline.bot/)
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
@@ -577,7 +567,6 @@ Special thanks to:
 
 * [Gabriela Thumé](https://github.com/gabithume) for everything ❤️
 * [Albert Espín](https://github.com/albert-espin) for thoughtful feedback and the first error corrections
-* [Eric S. Raymond](http://www.catb.org/esr/) (ESR) for his incredible contributions, corrections and for [supporting](https://x.com/esrtweet/status/1910809356381413593) this guide!
 * ChatGPT 4o for generating the banner you see on the top, inspired by the
   incredible artist [Deathburger](https://citadel9.com/)
 
@@ -585,7 +574,7 @@ Special thanks to:
 
 If you want to contribute with corrections, feedbacks or some missing tool or
 reference, please feel free to open a new PR, a new issue or get in touch with
-me: [@aut0mata](https://x.com/aut0mata).
+[Eric](https://x.com/esrtweet) or [Vilson](https://x.com/aut0mata).
 
 If you like this guide, please consider giving it a star ⭐ and follow it for new updates!
 
