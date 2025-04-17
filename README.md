@@ -53,6 +53,7 @@ Cool, let's start!
 - [How to prepare for the future of development and AI](https://www.youtube.com/watch?v=BP54GqVK3JA) by Santiago
 - [The revenge of the junior developer](https://sourcegraph.com/blog/revenge-of-the-junior-developer) by Steve Yegge
 - [Dear Student: Yes, AI is here, you're screwed unless you take action...](https://ghuntley.com/screwed/) by Geoffrey Huntley
+- [How to Build an Agent](https://ampcode.com/how-to-build-an-agent) by Thorsten Ball
 
 ## AI coding? Vibe coding?
 
