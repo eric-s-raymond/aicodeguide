@@ -15,12 +15,6 @@
 </div>
 <br /><br />
 
-<div align="center">
-  <a href="https://x.com/esrtweet/status/1910809356381413593">
-    <img src="https://i.imgur.com/ChMRNCA.png" alt="ESR" width="500px">
-  </a>
-</div>
-
 ## Introduction
 
 The way we interact with computers and code them is
@@ -165,6 +159,11 @@ It's important to know how to prompt well. Some tips:
 - Try different models to confirm and validate output of other models.
 - LLMs are "yes machines", so apply critical thinking.
 
+In the rest of our examples we will use the .md file extension associated with Markdown
+If you prefer asciidoc (which has somewhat better support for structured documents)
+use that and substitute ".adoc" in these instructions. The LLMs don't care, they
+will handle Markdown or asciidoc or any other purely textual format you throw at them.
+
 Here is a method/procedure/strategy/workflow that generally works well:
 
 1. Use `ChatGPT 4.5`, `4o` or `o3` with the following prompt:
@@ -213,7 +212,7 @@ complexity jumps. Wire tasks into others, creating a dependency list. There
 should be no orphan tasks.
 
 VERY IMPORTANT:
-- Use markdown
+- Use markdown or asciidoc 
 - Each task and subtask should be a checklist item
 - Provide context enough per task so a developer should be able to implement it
 - Each task should have a number id
@@ -330,7 +329,12 @@ Check <a href="#vibe">here</a> how to use a LLM to create one for you.
 
 ## Keep a prompt log
 
-Record every prompt you send, with (this is important) your interspersed comments on what you were thinking and any surprises you got. This prompt log is your record of design intent; it will be invaluable to anyone approaching the project without having been involved in it, including you in six months after you have forgotten what you are thinking.
+Record every prompt you send, with (this is important) your
+interspersed comments on what you were thinking and any surprises you
+got. This prompt log is your record of design intent; it will be
+invaluable to anyone approaching the project without having been
+involved in it, including you in six months after you have forgotten
+what you were thinking.
 
 There isn't any convention for the name of this file yet, you can use something like
 `vibecode.adoc` or `history.md`.
@@ -458,13 +462,27 @@ you're guiding a junior developer to work in a specific GH ticket :-)
 
 ## Well-structured prompting for well-structured design
 
-At present (in April 2025) LLMs are already good at generating working code, but they're not very good at generating well-structured code - that is, with proper layering and separation of concerns. Good structure is important for readability and maintainability, and reduces your defect rate.
+At present (in April 2025) LLMs are already good at generating working
+code, but they're not very good at generating well-structured code -
+that is, with proper layering and separation of concerns. Good
+structure is important for readability and maintainability, and
+reduces your defect rate.
 
-Think through your design and then prompt-engineer it in a sequence that produces good structure. In a database-centered application, for example, it's a good idea to specify your record types first, then guide your LLM through building a manager class or module that encapsulates access to them. Only after that should you begin prompting for business logic.
+Think through your design and then prompt-engineer it in a sequence
+that produces good structure. In a database-centered application, for
+example, it's a good idea to specify your record types first, then
+guide your LLM through building a manager class or module that
+encapsulates access to them. Only after that should you begin
+prompting for business logic.
 
-More generally, when you prompt, think about separating engine code from policy code, and issue your prompts in a sequence that guides the LLM to do that.
+More generally, when you prompt, think about separating engine code
+from policy code, and issue your prompts in a sequence that guides the
+LLM to do that.
 
-You should include in your project rules, one that tells the LLM not to violate layering - if it needs a new engine method, it should add something to a clean encapsulation layer rather than having low-level implementation details entangled with business logic.
+You should include in your project rules, one that tells the LLM not
+to violate layering - if it needs a new engine method, it should add
+something to a clean encapsulation layer rather than having low-level
+implementation details entangled with business logic.
 
 Another interesting practice is to start with the core of you project
 and spend time making sure to get the main
@@ -475,9 +493,15 @@ a future webapp, for instance.
 
 ## Should I use TDD or any other type of tests?
 
-Yes, tests are still important. At current state of the art in 2025, LLMs are good at generating clean and correct code, but they sometimes hallucinate - and more importantly, they can fail at understanding specifications and generate correct code to do the wrong thing.
+Yes, tests are still important. At current state of the art in 2025,
+LLMs are good at generating clean and correct code, but they sometimes
+hallucinate - and more importantly, they can fail at understanding
+specifications and generate correct code to do the wrong thing.
 
-It is not likely that this will change even if and when we get full human-equivalent artificial general intelligence - after all, human beings misunderstand specifications too! Ambiguity of language is why tests will continue to be important even into the future.
+It is not likely that this will change even if and when we get full
+human-equivalent artificial general intelligence - after all, human
+beings misunderstand specifications too! Ambiguity of language is why
+tests will continue to be important even into the future.
 
 Using TDD to create skeletons of what you want as result can really help guiding LLMs to
 implement the target piece of code you're testing. Instructing your LLM to create tests and
