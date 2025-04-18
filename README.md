@@ -17,7 +17,7 @@
 
 ## Introduction
 
-The way we interact with computers and code them is
+The way we interact with computers and write code for them is
 changing. And it's a profound change: on the tools we use, the
 way we code and think about software products and systems.
 
@@ -96,7 +96,10 @@ You can use AI coding in many different ways, but in summary:
 
 You should learn and practice both!
 
-But lean more towards copiloting and away from pure YOLO vibecoding as project complexity scales up. The more likely it is that another human (or yourself in six months) will have to maintain the code, the more important this is.
+But lean more towards copiloting and away from pure YOLO vibecoding as
+project complexity scales up. The more likely it is that another human
+(or yourself in six months) will have to maintain the code, the more
+important this is.
 
 # 🗺️ The Roadmap
 
@@ -150,7 +153,7 @@ It's important to know how to prompt well. Some tips:
 - Give it details. If you know what you want, say it. If you know which
   programming language you want, which tech stack, what type of audience, add
   it to your prompt.
-- Markdown or other text-based format like asciidoc should be OK for LLMs to
+- Markdown or any other light text-based format like asciidoc should be OK for LLMs to
   interpret. In the end the text will be encoded as tokens. However, to put emphasis
   in specific parts of your prompt it's recommended to use some symbols
   like [XML tags](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags).
